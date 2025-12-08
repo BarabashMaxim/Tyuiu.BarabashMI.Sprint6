@@ -8,8 +8,8 @@
 
   <ItemGroup>
     <Reference Include="tyuiu.cources.programming.interfaces">
-      <HintPath>..\..\Tyuiu.BarabashMI.Sprint6\DLL\tyuiu.cources.programming.interfaces.dll</HintPath>
+      <HintPath>..\DLL\tyuiu.cources.programming.interfaces.dll</HintPath>
     </Reference>
-  </ItemGroup>
+  </ItemGroup>  
 
 </Project>
