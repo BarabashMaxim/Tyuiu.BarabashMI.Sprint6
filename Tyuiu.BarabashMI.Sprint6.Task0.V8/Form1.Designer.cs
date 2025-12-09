@@ -106,6 +106,7 @@
             textBoxResult.ReadOnly = true;
             textBoxResult.Size = new Size(100, 23);
             textBoxResult.TabIndex = 6;
+            textBoxResult.TextChanged += textBoxResult_TextChanged;
             // 
             // button1
             // 
