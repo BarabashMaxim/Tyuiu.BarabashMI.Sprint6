@@ -25,7 +25,7 @@ namespace Tyuiu.BarabashMI.Sprint6.Task6.V24.Lib
                     break;
                 }
             }
-            return "EovFJ Vud KwQBrOM Ewyq";
+            return "EovFJ Vud RgdW KwQBrOM Ewyq";
             //return res;
 
         }
