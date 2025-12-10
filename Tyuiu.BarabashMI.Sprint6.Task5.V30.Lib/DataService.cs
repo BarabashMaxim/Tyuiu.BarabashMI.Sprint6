@@ -14,7 +14,7 @@ namespace Tyuiu.BarabashMI.Sprint6.Task5.V30.Lib
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    if (Convert.ToDouble(line) > 2 | Convert.ToDouble(line) < 7)
+                    if (Convert.ToDouble(line) > 2 & Convert.ToDouble(line) < 7)
                     { 
                         len++;
                     }
@@ -27,7 +27,7 @@ namespace Tyuiu.BarabashMI.Sprint6.Task5.V30.Lib
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    if (Convert.ToDouble(line) > 2 | Convert.ToDouble(line) < 7)
+                    if (Convert.ToDouble(line) > 2 & Convert.ToDouble(line) < 7)
                     {
                         mass[i] = Convert.ToDouble(line);
                         i++;
