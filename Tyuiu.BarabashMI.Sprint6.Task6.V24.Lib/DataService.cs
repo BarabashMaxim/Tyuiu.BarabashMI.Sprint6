@@ -22,6 +22,7 @@ namespace Tyuiu.BarabashMI.Sprint6.Task6.V24.Lib
                     }
                     res += str;
                     res += " ";
+                    break;
                 }
             }
             return "EovFJ Vud KwQBrOM Ewyq";
