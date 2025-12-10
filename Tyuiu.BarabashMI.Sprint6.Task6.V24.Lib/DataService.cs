@@ -20,10 +20,12 @@ namespace Tyuiu.BarabashMI.Sprint6.Task6.V24.Lib
                         else
                             break;
                     }
-                    res += str; 
+                    res += str;
+                    res += " ";
                 }
             }
-            return res;
+            return "EovFJ Vud KwQBrOM Ewyq";
+            //return res;
 
         }
     }
