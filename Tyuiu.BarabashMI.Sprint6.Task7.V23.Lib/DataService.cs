@@ -24,6 +24,8 @@ namespace Tyuiu.BarabashMI.Sprint6.Task7.V23.Lib
                 while (line != null)
                 { 
                     string[] parts = line.Split(";");
+                    if (Convert.ToInt32(parts[-1]) < 2)
+                        parts[-1] = "2";
                     for (int u = 0; u < j; u++)
                     {
                         matrix[l, u] = Convert.ToInt32(parts[u]);
