@@ -6,47 +6,29 @@ namespace Tyuiu.BarabashMI.Sprint6.Task7.V23.Lib
         public int[,] GetMatrix(string path)
         {
             int[,] matrix;
-            int i = 1, j = 0;
+            int i = 0, j = 0;
             using (StreamReader reader = new StreamReader(path))
             { 
                 string line = reader.ReadLine();
-                if (i == 1)
-                {
-                    foreach (char m in line)
-                    {
-                        if (m == ';')
-                            i++;
-                    }
-                }
                 while (line != null)
-                    j++;
+                {
+                    i++;
+                    j = line.Split(';').Length;
+                }
             }
-            matrix = new int[j, i];
+            matrix = new int[i,j];
             int l = 0;
             using (StreamReader reader = new StreamReader(path))
             { 
                 string line = reader.ReadLine();
                 while (line != null)
                 { 
-                    int[] mass = new int[i];
-                    string str = "";
-                    int k = 0;
-                    for (int u = 0; u < line.Length; u++)
+                    string[] parts = line.Split(";");
+                    for (int u = 0; u < j; u++)
                     {
-                        if (line[u] != ';')
-                            str += line[u];
-                        else
-                        {
-                            mass[k] = Convert.ToInt32(str);
-                            k++;
-                            str = "";
-                        }
+                        matrix[l, u] = Convert.ToInt32(parts[u]);
                     }
-
-                    for (int y = 0; y < mass.Length; y++)
-                    { 
-                        matrix[l, y] = mass[y];
-                    }
+                    l++;
                 }
             }
             return matrix;
