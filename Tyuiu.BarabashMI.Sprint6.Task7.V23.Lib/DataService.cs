@@ -8,9 +8,9 @@ namespace Tyuiu.BarabashMI.Sprint6.Task7.V23.Lib
             int[,] matrix;
             int i = 0, j = 0;
             using (StreamReader reader = new StreamReader(path))
-            { 
-                string line = reader.ReadLine();
-                while (line != null)
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
                 {
                     i++;
                     j = line.Split(';').Length;
@@ -19,9 +19,9 @@ namespace Tyuiu.BarabashMI.Sprint6.Task7.V23.Lib
             matrix = new int[i,j];
             int l = 0;
             using (StreamReader reader = new StreamReader(path))
-            { 
-                string line = reader.ReadLine();
-                while (line != null)
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
                 { 
                     string[] parts = line.Split(";");
                     if (Convert.ToInt32(parts[-1]) < 2)
