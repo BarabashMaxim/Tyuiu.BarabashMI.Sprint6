@@ -24,7 +24,8 @@ namespace Tyuiu.BarabashMI.Sprint6.Task7.V23.Lib
                 while ((line = reader.ReadLine()) != null)
                 { 
                     string[] parts = line.Split(";");
-                    if (Convert.ToInt32(parts[-1]) < 2)
+                    int LastI = parts.Length - 1;
+                    if (Convert.ToInt32(parts[LastI]) < 2)
                         parts[-1] = "2";
                     for (int u = 0; u < j; u++)
                     {
